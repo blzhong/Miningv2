@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineCraft Fake Mining Simulator</title>
+    <link rel="stylesheet" href="overlays.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>MineCraft Fake Mining Simulator</h1>
+    <h2>Score: <span id="score">5</span></h2>
+    <audio src="./03 - Subwoofer Lullaby.mp3" autoplay loop></audio>
+    <div id="store-container">
+        <!-- Add store for each widget type -->
+        <!--   name: Name of item -->
+        <!--   cost: Cost to buy widget -->
+        <!--   reap: Amount widget earns -->
+        <!--   cooldown: Time before next harvest -->
+        <!--   auto: "true" if store runs automatically -->
+        <!--   text: Text to appear on widget (optional) -->
+        <!--   textstyle: Style to apply to text -->
+        <!--   src: Path to image (optional) -->
+        <!--   imgstyle: Style to apply to image (optional) -->
+        <div class="store" name="Wooden Pickaxe" cost="5" reap="1" cooldown="5" auto="true" durability="25"
+        src="./minecraft-wooden-pickaxe-template.png"></div>
+        <div class="store" name="Stone Pickaxe" cost="15" reap="1" cooldown="4" auto="true" durability="50"
+        src="./R.png"></div>
+        <div class="store" name = "Gold Pickaxe" cost="20" reap="1" cooldown=".3" auto="true" durability="30"
+        src="./Golden_Pickaxe_JE4_BE3.webp"></div>
+        <div class="store" name = "Iron Pickaxe" cost="60" reap="1" cooldown="3" auto="true" durability="100"
+        src="./minecraft-iron-pickaxe-template.png"></div>
+        <div class="store" name = "Diamond Pickaxe" cost="150" reap="1" cooldown="2" auto="true" durability="500"
+        src="./Diamond_Pickaxe_JE3_BE3.webp"></div>
+        <div class="store" name = "Netherite Pickaxe" cost="500" reap="1" cooldown="1" auto="true" durability="1000"
+        src="./Netherite_Pickaxe_JE3.webp"></div>
+        <div class="store" name = "Enchanted Netherite Pickaxe" cost="1000" reap="5" cooldown=".5" auto="true" durability="2000"
+        src="./Enchanted_Netherite_Pickaxe.webp"></div>
+    </div>
+    <div id="widget-container"></div>
+    
+    <script src="./game.js"></script>
+    <script src="./load.js"></script>
+</body>
+</html>
